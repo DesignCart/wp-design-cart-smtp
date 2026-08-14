@@ -1,0 +1,345 @@
+/**
+ * Design Cart SMTP
+ * Autor: Paweł Nosko
+ * Firma: Design Cart
+ * Adres: https://www.designcart.pl/
+ */
+
+body.settings_page_design-cart-smtp #wpcontent {
+  padding-left: 0;
+}
+
+body.settings_page_design-cart-smtp #wpbody-content {
+  padding-bottom: 0;
+}
+
+body.settings_page_design-cart-smtp .wrap.dc-smtp-admin-wrap {
+  margin: 0;
+  max-width: none;
+}
+
+body.settings_page_design-cart-smtp .wrap.dc-smtp-admin-wrap > h1 {
+  display: none;
+}
+
+body.settings_page_design-cart-smtp #wpbody-content > .notice,
+body.settings_page_design-cart-smtp #wpbody-content > .updated,
+body.settings_page_design-cart-smtp #wpbody-content > .error {
+  display: none !important;
+}
+
+.dc-smtp-admin-page {
+  min-height: calc(100vh - 32px);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(31, 162, 140, 0.14), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 95% 0%, rgba(28, 167, 202, 0.12), transparent 50%),
+    linear-gradient(180deg, #eef4f3 0%, #f1f5f9 100%);
+  padding-bottom: 3rem;
+}
+
+.dc-smtp-admin-page .dc-page__wrap {
+  padding-bottom: 2rem;
+}
+
+.dc-smtp-admin-page .dc-hero a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.dc-smtp-admin-page .dc-hero a:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+.dc-smtp-admin-page .dc-hero .dc-btn,
+.dc-smtp-admin-page .dc-form-card .dc-btn {
+  height: auto;
+  min-height: 0;
+  box-shadow: none;
+  text-shadow: none;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.dc-smtp-admin-page .dc-hero .dc-btn--light {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.dc-smtp-admin-page .dc-form-card .dc-btn--primary {
+  box-shadow: 0 8px 24px var(--dc-brand-glow, rgba(31, 162, 140, 0.35));
+}
+
+.dc-smtp-flash {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin: 1.25rem 1.75rem 0;
+  padding: 0.95rem 1.15rem;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.dc-form-card__body .dc-smtp-flash {
+  margin: 0 0 1.15rem;
+}
+
+.dc-smtp-flash i {
+  margin-top: 0.15rem;
+}
+
+.dc-smtp-flash--ok {
+  background: var(--dc-success-subtle, rgba(34, 160, 107, 0.1));
+  color: var(--dc-success, #22a06b);
+  border: 1px solid rgba(34, 160, 107, 0.22);
+}
+
+.dc-smtp-flash--warn {
+  background: var(--dc-warning-subtle, rgba(245, 166, 35, 0.12));
+  color: #b45309;
+  border: 1px solid rgba(245, 166, 35, 0.28);
+}
+
+.dc-smtp-flash--err {
+  background: var(--dc-error-subtle, rgba(229, 72, 77, 0.1));
+  color: var(--dc-error, #e5484d);
+  border: 1px solid rgba(229, 72, 77, 0.22);
+}
+
+.dc-smtp-status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.dc-smtp-status-card {
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--dc-line, rgba(15, 23, 42, 0.08));
+}
+
+.dc-smtp-status-card__label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dc-muted, #64748b);
+}
+
+.dc-smtp-status-card__value {
+  margin: 0.35rem 0 0;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.dc-smtp-status-card__value.is-ok {
+  color: var(--dc-success, #22a06b);
+}
+
+.dc-smtp-status-card__value.is-off {
+  color: var(--dc-ink, #0f172a);
+}
+
+.dc-smtp-status-card__hint {
+  margin: 0.35rem 0 0;
+  font-size: 13px;
+  color: var(--dc-muted, #64748b);
+  font-weight: 500;
+}
+
+.dc-smtp-password {
+  position: relative;
+}
+
+.dc-smtp-password .dc-input {
+  padding-right: 3rem;
+}
+
+.dc-smtp-password__toggle {
+  position: absolute;
+  right: 0.45rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  color: var(--dc-muted, #64748b);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.dc-smtp-password__toggle:hover {
+  color: var(--dc-brand, #1fa28c);
+  background: var(--dc-brand-subtle, rgba(31, 162, 140, 0.1));
+}
+
+.dc-smtp-debug-wrap {
+  margin-top: 1rem;
+}
+
+.dc-smtp-debug-wrap h4 {
+  margin: 0 0 0.55rem;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dc-ink, #0f172a);
+}
+
+.dc-smtp-debug {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  max-height: 320px;
+  overflow: auto;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.dc-smtp-test-result {
+  margin-top: 1rem;
+}
+
+.dc-smtp-errors {
+  margin-top: 1rem;
+  padding: 1rem 1.15rem 1.1rem;
+  border-radius: 12px;
+  background: var(--dc-error-subtle, rgba(229, 72, 77, 0.1));
+  border: 1px solid rgba(229, 72, 77, 0.22);
+}
+
+.dc-smtp-errors h4,
+.dc-smtp-error-info h4 {
+  margin: 0 0 0.65rem;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dc-error, #e5484d);
+}
+
+.dc-smtp-errors ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.dc-smtp-errors li {
+  margin: 0 0 0.75rem;
+  color: var(--dc-ink, #0f172a);
+}
+
+.dc-smtp-errors li:last-child {
+  margin-bottom: 0;
+}
+
+.dc-smtp-errors__hint {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--dc-muted, #64748b);
+}
+
+.dc-smtp-error-info {
+  margin-top: 1rem;
+}
+
+.dc-smtp-error-info pre {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  max-height: 160px;
+  overflow: auto;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(229, 72, 77, 0.22);
+  color: var(--dc-error, #e5484d);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12.5px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.dc-smtp-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--dc-line, rgba(15, 23, 42, 0.08));
+  border-radius: 12px;
+  background: #fff;
+}
+
+.dc-smtp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+}
+
+.dc-smtp-table th,
+.dc-smtp-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--dc-line, rgba(15, 23, 42, 0.08));
+  text-align: left;
+  vertical-align: top;
+}
+
+.dc-smtp-table th {
+  background: var(--dc-surface-2, #f8fafc);
+  font-weight: 700;
+  color: var(--dc-ink, #0f172a);
+}
+
+.dc-smtp-table tr:last-child td {
+  border-bottom: none;
+}
+
+.dc-smtp-table code {
+  font-size: 12px;
+  background: var(--dc-surface-2, #f8fafc);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+.dc-smtp-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--dc-surface-2, #f8fafc);
+  color: var(--dc-muted, #64748b);
+}
+
+.dc-smtp-pill--ok {
+  background: rgba(34, 160, 107, 0.12);
+  color: #22a06b;
+}
+
+.dc-smtp-pill--err {
+  background: rgba(229, 72, 77, 0.12);
+  color: #e5484d;
+}
+
+.dc-smtp-log-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.dc-smtp-presets {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .dc-smtp-status-grid {
+    grid-template-columns: 1fr;
+  }
+}
