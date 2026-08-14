@@ -11,7 +11,7 @@
 <h2>Links</h2>
 <ul>
   <li><strong>Download (Design Cart):</strong> <a href="https://www.designcart.pl/laboratorium/355-jak-skonfigurowac-smtp-w-wordpress-darmowy-plugin-testowaniem-polaczenia.html">https://www.designcart.pl/laboratorium/355-jak-skonfigurowac-smtp-w-wordpress-darmowy-plugin-testowaniem-polaczenia.html</a></li>
-  <li><strong>GitHub:</strong> <a href="">[add repository URL]</a></li>
+   
   <li><strong>Documentation / project page:</strong> <a href="https://www.designcart.pl/laboratorium/355-jak-skonfigurowac-smtp-w-wordpress-darmowy-plugin-testowaniem-polaczenia.html">https://www.designcart.pl/laboratorium/355-jak-skonfigurowac-smtp-w-wordpress-darmowy-plugin-testowaniem-polaczenia.html</a></li>
   <li><strong>Author — Paweł Nosko:</strong> <a href="https://www.designcart.pl/pawel-nosko.html">https://www.designcart.pl/pawel-nosko.html</a></li>
   <li><strong>Studio — Design Cart:</strong> <a href="https://www.designcart.pl/">https://www.designcart.pl/</a></li>
