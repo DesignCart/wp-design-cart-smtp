@@ -68,7 +68,7 @@
 <p>Admin UI is Polish. Tab names below are English equivalents.</p>
 
 <h3>General (Ogólne)</h3>
-<p><img src="1-tab-ogolne.png" alt="General tab — status cards and SMTP toggles"></p>
+<p><img src="https://www.designcart.pl/images/laboratorium/dc_wp_smtp/1-tab-ogolne.webp" alt="General tab — status cards and SMTP toggles"></p>
 <dl>
   <dt><strong>Status cards</strong> (read-only)</dt>
   <dd>SMTP on/off, WooCommerce detected or not, last send success/error/none (subject from the log).</dd>
@@ -85,7 +85,7 @@
 </dl>
 
 <h3>SMTP server (Serwer SMTP)</h3>
-<p><img src="2-tab-serwer-smtp.png" alt="SMTP server tab — provider presets and connection fields"></p>
+<p><img src="https://www.designcart.pl/images/laboratorium/dc_wp_smtp/2-tab-serwer-smtp.webp" alt="SMTP server tab — provider presets and connection fields"></p>
 <dl>
   <dt><strong>Provider</strong></dt>
   <dd>Presets: Custom, Gmail (<code>smtp.gmail.com</code>, TLS, 587), Outlook, home.pl, nazwa.pl (SSL, 465), OVH (SSL, 465), cyber_Folks. Fills host / port / encryption only. Gmail typically needs an app password.</dd>
@@ -108,7 +108,7 @@
 </dl>
 
 <h3>Test</h3>
-<p><img src="3-tab-test.png" alt="Test tab — recipient, subject, body, send buttons"></p>
+<p><img src="https://www.designcart.pl/images/laboratorium/dc_wp_smtp/3-tab-test.webp" alt="Test tab — recipient, subject, body, send buttons"></p>
 <p>Sends through the same SMTP path as live mail. Does not create WooCommerce orders.</p>
 <dl>
   <dt><strong>Recipient</strong> (required)</dt>
@@ -131,7 +131,7 @@
 </ol>
 
 <h3>WooCommerce</h3>
-<p><img src="4-tab-woocommerce.png" alt="WooCommerce tab — compatibility status and shop email list"></p>
+<p><img src="https://www.designcart.pl/images/laboratorium/dc_wp_smtp/4-tab-woocommerce.webp" alt="WooCommerce tab — compatibility status and shop email list"></p>
 <dl>
   <dt><strong>Compatibility</strong></dt>
   <dd>Confirms WooCommerce is active and transactional mail uses this SMTP. Content and templates stay under <strong>WooCommerce → Settings → Emails</strong> (button on this tab). Enable Force From if the server requires From = login.</dd>
@@ -141,7 +141,7 @@
 <p>A status notice is also shown on the WooCommerce Emails settings screen.</p>
 
 <h3>Log (Dziennik)</h3>
-<p><img src="5-tab-dziennik.png" alt="Log tab — recent sends with OK and error rows"></p>
+<p><img src="https://www.designcart.pl/images/laboratorium/dc_wp_smtp/5-tab-dziennik.webp" alt="Log tab — recent sends with OK and error rows"></p>
 <dl>
   <dt><strong>Clear log</strong></dt>
   <dd>Deletes all rows. Does not turn logging off.</dd>
